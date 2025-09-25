@@ -1,0 +1,30 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+server/.venv/
+
+# Packaging outputs
+*.egg-info/
+dist/
+build/
+
+# Node.js dependencies
+node_modules/
+
+# Logs
+*.log
+
+# Editor directories
+.vscode/
+.idea/
+
+# macOS
+.DS_Store

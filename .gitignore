@@ -10,6 +10,7 @@ __pycache__/
 env/
 venv/
 server/.venv/
+.envrc
 
 # Packaging outputs
 *.egg-info/
@@ -28,3 +29,5 @@ node_modules/
 
 # macOS
 .DS_Store
+
+.serena/

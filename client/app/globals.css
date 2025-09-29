@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ai-surface: 0 0% 100%;
+  --ai-surface-subtle: 210 40% 96.1%;
+  --ai-surface-strong: 222.2 47.4% 11.2%;
+  --ai-text: 222.2 47.4% 11.2%;
+  --ai-text-muted: 215.4 16.3% 46.9%;
+  --ai-primary: 210 92% 55%;
+  --ai-primary-foreground: 210 40% 98%;
+  --ai-accent: 256 85% 56%;
+  --ai-accent-foreground: 0 0% 100%;
+  --ai-danger: 0 84.2% 60.2%;
+  --ai-danger-foreground: 0 0% 98%;
+  --ai-ring: 210 92% 55%;
+  --ai-border: 214.3 31.8% 91.4%;
+  --ai-radius: 0.75rem;
+
+  --background: var(--ai-surface);
+  --foreground: var(--ai-text);
+  --muted: var(--ai-surface-subtle);
+  --muted-foreground: var(--ai-text-muted);
+  --border: var(--ai-border);
+  --input: var(--ai-border);
+  --ring: var(--ai-ring);
+  --primary: var(--ai-primary);
+  --primary-foreground: var(--ai-primary-foreground);
+  --secondary: var(--ai-surface-subtle);
+  --secondary-foreground: var(--ai-text);
+  --accent: var(--ai-accent);
+  --accent-foreground: var(--ai-accent-foreground);
+  --destructive: var(--ai-danger);
+  --destructive-foreground: var(--ai-danger-foreground);
+  --card: var(--ai-surface);
+  --card-foreground: var(--ai-text);
+  --radius: var(--ai-radius);
+}
+
+.dark {
+  --ai-surface: 222.2 47.4% 11.2%;
+  --ai-surface-subtle: 217.2 32.6% 17.5%;
+  --ai-surface-strong: 210 40% 98%;
+  --ai-text: 210 40% 98%;
+  --ai-text-muted: 215 20.2% 65.1%;
+  --ai-primary: 210 92% 65%;
+  --ai-primary-foreground: 222.2 47.4% 11.2%;
+  --ai-accent: 256 95% 76%;
+  --ai-accent-foreground: 222.2 47.4% 11.2%;
+  --ai-danger: 0 72% 51%;
+  --ai-danger-foreground: 210 40% 98%;
+  --ai-ring: 213 80% 74%;
+  --ai-border: 217.2 32.6% 17.5%;
+
+  --background: var(--ai-surface);
+  --foreground: var(--ai-text);
+  --muted: var(--ai-surface-subtle);
+  --muted-foreground: var(--ai-text-muted);
+  --border: var(--ai-border);
+  --input: var(--ai-border);
+  --ring: var(--ai-ring);
+  --primary: var(--ai-primary);
+  --primary-foreground: var(--ai-primary-foreground);
+  --secondary: var(--ai-surface-subtle);
+  --secondary-foreground: var(--ai-text);
+  --accent: var(--ai-accent);
+  --accent-foreground: var(--ai-accent-foreground);
+  --destructive: var(--ai-danger);
+  --destructive-foreground: var(--ai-danger-foreground);
+  --card: var(--ai-surface);
+  --card-foreground: var(--ai-text);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

@@ -54,3 +54,29 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 ```
+## Next.js クライアントの起動
+
+ADK API サーバーと併せて Next.js 製のチャットクライアントを起動できます。
+
+1. 依存パッケージをインストールします。
+   ```bash
+   cd client
+   pnpm install
+   ```
+2. `.env.local` を作成し、ADK API サーバーの URL を設定します。
+   ```bash
+   cp .env.local.example .env.local
+   # NEXT_PUBLIC_ADK_BASE_URL に ADK サーバーのエンドポイントを設定
+   ```
+3. サーバー側の API を起動します。
+   ```bash
+   cd ../server
+   uvicorn main:app --reload
+   ```
+4. 別ターミナルで Next.js クライアントを開発モードで起動します。
+   ```bash
+   cd ../client
+   pnpm dev
+   ```
+
+`pnpm build` と `pnpm start` を使用すると本番ビルドを生成・起動できます。
